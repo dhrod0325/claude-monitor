@@ -25,6 +25,7 @@ import { useCallback, useEffect, useState } from 'react';
 const GITHUB_URL = 'https://github.com/dhrod0325/claude-monitor';
 const DOWNLOAD_URL =
   'https://github.com/dhrod0325/claude-monitor/releases/download/v0.1.0/Claude.Monitor_0.1.0_aarch64.dmg';
+const IS_GITHUB_PAGES = import.meta.env.VITE_GITHUB_PAGES === 'true';
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -159,11 +160,13 @@ export function LandingPage() {
               </Button>
             </a>
 
-            <a href="/app.html">
-              <Button variant="secondary" size="sm">
-                {t('landing.nav.openApp')}
-              </Button>
-            </a>
+            {!IS_GITHUB_PAGES && (
+              <a href="/app.html">
+                <Button variant="secondary" size="sm">
+                  {t('landing.nav.openApp')}
+                </Button>
+              </a>
+            )}
           </div>
         </div>
       </motion.nav>
