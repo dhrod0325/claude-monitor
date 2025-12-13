@@ -26,6 +26,7 @@ const GITHUB_URL = 'https://github.com/dhrod0325/claude-monitor';
 const DOWNLOAD_URL =
   'https://github.com/dhrod0325/claude-monitor/releases/download/v0.1.0/Claude.Monitor_0.1.0_aarch64.dmg';
 const IS_GITHUB_PAGES = import.meta.env.VITE_GITHUB_PAGES === 'true';
+const BASE_URL = import.meta.env.BASE_URL;
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -128,7 +129,7 @@ export function LandingPage() {
       >
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src="/logo.svg" alt="Claude Monitor" className="w-8 h-8" />
+            <img src={`${BASE_URL}logo.svg`} alt="Claude Monitor" className="w-8 h-8" />
             <span className="font-semibold text-lg">{t('header.title')}</span>
           </div>
 
@@ -291,7 +292,7 @@ export function LandingPage() {
             }}
           >
             <img
-              src="/screenshot/screen.png"
+              src={`${BASE_URL}screenshot/screen.png`}
               alt="Claude Monitor Dashboard"
               className="w-full h-auto"
             />
