@@ -12,7 +12,7 @@
     "windows": [
       {
         "title": "Claude Monitor",
-        "url": "http://localhost:8000",
+        "url": "http://localhost:8000/app.html",
         "width": 1400,
         "height": 900,
         "minWidth": 1024,
