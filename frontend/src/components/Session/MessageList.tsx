@@ -5,6 +5,7 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import { Markdown } from '@/components/ui/markdown';
 import { ToolCall } from './ToolCall';
 import { CommandWidget, OutputWidget, ToolResultWidget } from '@/components/widgets';
+import { ScrollFloatingButtons } from '@/components/common';
 import type { Message, ToolCallItem, ToolResultItem } from '@/types';
 
 interface MessageListProps {
@@ -63,14 +64,16 @@ function parseUserContent(content: string) {
 
 export function MessageList({ messages }: MessageListProps) {
   const bottomRef = useRef<HTMLDivElement>(null);
+  const viewportRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
 
   return (
-    <ScrollArea className="h-full">
-      <div className="p-4 space-y-4">
+    <div className="relative h-full">
+      <ScrollArea className="h-full" viewportRef={viewportRef}>
+        <div className="p-4 space-y-4">
         {messages.map((msg, idx) => (
           <motion.div
             key={idx}
@@ -189,7 +192,9 @@ export function MessageList({ messages }: MessageListProps) {
           </motion.div>
         ))}
         <div ref={bottomRef} />
-      </div>
-    </ScrollArea>
+        </div>
+      </ScrollArea>
+      <ScrollFloatingButtons scrollContainerRef={viewportRef} />
+    </div>
   );
 }
