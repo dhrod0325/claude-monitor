@@ -9,8 +9,17 @@ Claude Codeセッションをリアルタイムで監視・分析するWebアプ
 Claude MonitorはClaude Codeのセッションデータを可視化し、開発活動を追跡・分析します。
 リアルタイム監視、使用量統計、AI駆動のプロンプト/業務分析機能を提供します。
 
+## ダウンロード
+
+| プラットフォーム | ダウンロード |
+|------------------|--------------|
+| macOS (Apple Silicon) | [Claude.Monitor_0.1.0_aarch64.dmg](https://github.com/dhrod0325/claude-monitor/releases/download/v0.1.0/Claude.Monitor_0.1.0_aarch64.dmg) |
+
+> 全リリースを見る: [Releases](https://github.com/dhrod0325/claude-monitor/releases)
+
 ## 目次
 
+- [ダウンロード](#ダウンロード)
 - [機能](#機能)
 - [要件](#要件)
 - [インストール](#インストール)

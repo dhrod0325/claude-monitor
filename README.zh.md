@@ -9,8 +9,17 @@
 Claude Monitor可视化Claude Code会话数据，追踪和分析开发活动。
 提供实时监控、使用量统计、AI驱动的提示词/工作分析功能。
 
+## 下载
+
+| 平台 | 下载 |
+|------|------|
+| macOS (Apple Silicon) | [Claude.Monitor_0.1.0_aarch64.dmg](https://github.com/dhrod0325/claude-monitor/releases/download/v0.1.0/Claude.Monitor_0.1.0_aarch64.dmg) |
+
+> 查看所有版本: [Releases](https://github.com/dhrod0325/claude-monitor/releases)
+
 ## 目录
 
+- [下载](#下载)
 - [功能](#功能)
 - [系统要求](#系统要求)
 - [安装](#安装)
