@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Claude Monitor",
+  "version": "0.1.0",
+  "identifier": "com.claude.monitor",
+  "build": {
+    "beforeBuildCommand": "cd ../frontend && npm run build",
+    "beforeDevCommand": "",
+    "frontendDist": "../../frontend/dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Claude Monitor",
+        "url": "http://localhost:8000",
+        "width": 1400,
+        "height": 900,
+        "minWidth": 1024,
+        "minHeight": 768,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["dmg", "app"],
+    "icon": [
+      "../../assets/icon.png",
+      "../../assets/icon.icns",
+      "../../assets/icon.ico"
+    ],
+    "externalBin": [
+      "backend"
+    ],
+    "macOS": {
+      "minimumSystemVersion": "10.15"
+    }
+  },
+  "plugins": {
+    "shell": {
+      "open": true
+    }
+  }
+}

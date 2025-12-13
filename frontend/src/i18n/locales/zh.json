@@ -1,0 +1,138 @@
+{
+  "common": {
+    "back": "返回",
+    "refresh": "刷新",
+    "loading": "加载中...",
+    "search": "搜索",
+    "tryAgain": "重试",
+    "copied": "已复制",
+    "sessions": "会话",
+    "tokens": "令牌",
+    "page": "页",
+    "of": "/",
+    "showing": "显示",
+    "cancel": "取消",
+    "close": "关闭",
+    "selectModel": "选择模型"
+  },
+  "header": {
+    "title": "Claude Monitor",
+    "searchPlaceholder": "搜索会话...",
+    "analysis": "提示词分析",
+    "workAnalysis": "工作",
+    "usage": "用量"
+  },
+  "sidebar": {
+    "projects": "项目",
+    "noProjects": "没有项目"
+  },
+  "sessionList": {
+    "selectProject": "请选择项目或搜索",
+    "searchResults": "\"{{query}}\" 搜索结果: {{count}}个",
+    "noSearchResults": "没有搜索结果",
+    "noSessions": "没有会话"
+  },
+  "sessionCard": {
+    "view": "查看",
+    "continue": "继续",
+    "resume": "恢复",
+    "agent": "代理"
+  },
+  "sessionView": {
+    "session": "会话"
+  },
+  "usage": {
+    "title": "用量仪表板",
+    "description": "跟踪Claude Code的使用量和费用",
+    "totalCost": "总费用",
+    "totalSessions": "总会话数",
+    "totalTokens": "总令牌数",
+    "avgCostPerSession": "平均会话费用",
+    "overview": "概览",
+    "byModel": "按模型",
+    "byProject": "按项目",
+    "timeline": "时间线",
+    "tokenBreakdown": "令牌明细",
+    "inputTokens": "输入令牌",
+    "outputTokens": "输出令牌",
+    "cacheWrite": "缓存写入",
+    "cacheRead": "缓存读取",
+    "mostUsedModels": "常用模型",
+    "topProjects": "热门项目",
+    "usageByModel": "按模型用量",
+    "usageByProject": "按项目用量",
+    "totalProjects": "共{{count}}个项目",
+    "perSession": "/会话",
+    "dailyUsage": "每日用量",
+    "dailyUsageOverTime": "每日用量趋势",
+    "noUsageData": "所选期间没有数据",
+    "loadError": "加载用量统计失败,请重试",
+    "cost": "费用",
+    "model": "模型",
+    "modelPlural": "模型",
+    "dateRange": {
+      "7d": "最近7天",
+      "30d": "最近30天",
+      "all": "全部时间"
+    },
+    "models": "模型"
+  },
+  "analysis": {
+    "title": "提示词分析",
+    "description": "分析提示词模式并获取改进建议",
+    "analyzing": "分析中...",
+    "analyzingPrompts": "正在分析{{count}}个提示词",
+    "waiting": "等待响应...",
+    "mayTakeMinutes": "这可能需要几分钟",
+    "backgroundNotice": "分析进行中时您可以浏览其他页面。进度将显示在浮动指示器中。",
+    "newAnalysis": "新建分析",
+    "history": "历史记录",
+    "float": {
+      "error": "分析失败",
+      "complete": "分析完成",
+      "analyzing": "正在分析{{count}}个提示词...",
+      "preparing": "准备分析中...",
+      "clickToView": "点击查看"
+    }
+  },
+  "language": {
+    "ko": "韩语",
+    "en": "英语",
+    "ja": "日语",
+    "zh": "中文"
+  },
+  "workAnalysis": {
+    "title": "工作分析",
+    "description": "分析每日工作进度",
+    "dateRange": "分析期间",
+    "selectProjects": "选择项目",
+    "selectAll": "全选",
+    "clearSelection": "取消选择",
+    "selectedSessions": "已选会话: {{count}}个",
+    "noSessionsInPeriod": "所选期间没有会话",
+    "startAnalysis": "开始分析",
+    "analyzing": "分析中...",
+    "analyzingSessions": "正在分析{{count}}个会话",
+    "waiting": "等待响应...",
+    "backgroundNotice": "分析进行中时您可以浏览其他页面。",
+    "resultTitle": "工作分析结果",
+    "period": "期间",
+    "projectLabel": "项目",
+    "reanalyze": "重新分析",
+    "delete": "删除",
+    "confirmDelete": "确定要删除这个分析吗?",
+    "newAnalysis": "新建分析",
+    "history": "历史记录",
+    "noHistory": "没有分析历史",
+    "sessions": "会话",
+    "float": {
+      "error": "分析失败",
+      "complete": "分析完成",
+      "analyzing": "正在分析{{count}}个会话...",
+      "preparing": "准备分析中...",
+      "clickToView": "点击查看",
+      "chunkProgress": "({{current}}/{{total}} 块)",
+      "finalAnalysis": "(综合分析)"
+    }
+  }
+}

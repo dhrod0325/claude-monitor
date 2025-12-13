@@ -1,0 +1,138 @@
+{
+  "common": {
+    "back": "뒤로",
+    "refresh": "새로고침",
+    "loading": "로딩 중...",
+    "search": "검색",
+    "tryAgain": "다시 시도",
+    "copied": "복사됨",
+    "sessions": "세션",
+    "tokens": "토큰",
+    "page": "페이지",
+    "of": "/",
+    "showing": "표시 중",
+    "cancel": "취소",
+    "close": "닫기",
+    "selectModel": "모델 선택"
+  },
+  "header": {
+    "title": "Claude Monitor",
+    "searchPlaceholder": "세션 검색...",
+    "analysis": "프롬프트분석",
+    "workAnalysis": "업무분석",
+    "usage": "사용량"
+  },
+  "sidebar": {
+    "projects": "프로젝트",
+    "noProjects": "프로젝트가 없습니다"
+  },
+  "sessionList": {
+    "selectProject": "프로젝트를 선택하거나 검색해주세요",
+    "searchResults": "\"{{query}}\" 검색 결과: {{count}}개",
+    "noSearchResults": "검색 결과가 없습니다",
+    "noSessions": "세션이 없습니다"
+  },
+  "sessionCard": {
+    "view": "보기",
+    "continue": "이어하기",
+    "resume": "재개",
+    "agent": "에이전트"
+  },
+  "sessionView": {
+    "session": "세션"
+  },
+  "usage": {
+    "title": "사용량 대시보드",
+    "description": "Claude Code 사용량 및 비용 추적",
+    "totalCost": "총 비용",
+    "totalSessions": "총 세션",
+    "totalTokens": "총 토큰",
+    "avgCostPerSession": "세션당 평균 비용",
+    "overview": "개요",
+    "byModel": "모델별",
+    "byProject": "프로젝트별",
+    "timeline": "타임라인",
+    "tokenBreakdown": "토큰 분석",
+    "inputTokens": "입력 토큰",
+    "outputTokens": "출력 토큰",
+    "cacheWrite": "캐시 쓰기",
+    "cacheRead": "캐시 읽기",
+    "mostUsedModels": "가장 많이 사용한 모델",
+    "topProjects": "상위 프로젝트",
+    "usageByModel": "모델별 사용량",
+    "usageByProject": "프로젝트별 사용량",
+    "totalProjects": "총 {{count}}개 프로젝트",
+    "perSession": "/세션",
+    "dailyUsage": "일별 사용량",
+    "dailyUsageOverTime": "기간별 일별 사용량",
+    "noUsageData": "선택한 기간에 대한 사용량 데이터가 없습니다",
+    "loadError": "사용량 통계를 불러오는 데 실패했습니다. 다시 시도해주세요.",
+    "cost": "비용",
+    "model": "모델",
+    "modelPlural": "모델",
+    "dateRange": {
+      "7d": "최근 7일",
+      "30d": "최근 30일",
+      "all": "전체 기간"
+    },
+    "models": "모델"
+  },
+  "analysis": {
+    "title": "프롬프트 분석",
+    "description": "프롬프트 패턴을 분석하고 개선 제안을 받으세요",
+    "analyzing": "분석 중...",
+    "analyzingPrompts": "{{count}}개 프롬프트 분석 중",
+    "waiting": "응답 대기 중...",
+    "mayTakeMinutes": "몇 분 정도 소요될 수 있습니다",
+    "backgroundNotice": "분석 중에도 다른 페이지를 이용할 수 있습니다. 진행 상태는 플로팅 인디케이터에서 확인하세요.",
+    "newAnalysis": "새 분석",
+    "history": "히스토리",
+    "float": {
+      "error": "분석 실패",
+      "complete": "분석 완료",
+      "analyzing": "{{count}}개 프롬프트 분석 중...",
+      "preparing": "분석 준비 중...",
+      "clickToView": "클릭하여 보기"
+    }
+  },
+  "language": {
+    "ko": "한국어",
+    "en": "English",
+    "ja": "日本語",
+    "zh": "中文"
+  },
+  "workAnalysis": {
+    "title": "업무분석",
+    "description": "일자별 업무 진행 상황을 분석합니다",
+    "dateRange": "분석 기간",
+    "selectProjects": "프로젝트 선택",
+    "selectAll": "전체선택",
+    "clearSelection": "선택해제",
+    "selectedSessions": "선택된 세션: {{count}}개",
+    "noSessionsInPeriod": "선택한 기간에 세션이 없습니다",
+    "startAnalysis": "분석 시작",
+    "analyzing": "분석 중...",
+    "analyzingSessions": "{{count}}개 세션 분석 중",
+    "waiting": "응답 대기 중...",
+    "backgroundNotice": "분석 중에도 다른 페이지를 이용할 수 있습니다.",
+    "resultTitle": "업무분석 결과",
+    "period": "기간",
+    "projectLabel": "프로젝트",
+    "reanalyze": "재분석",
+    "delete": "삭제",
+    "confirmDelete": "이 분석을 삭제하시겠습니까?",
+    "newAnalysis": "새 분석",
+    "history": "히스토리",
+    "noHistory": "분석 히스토리가 없습니다",
+    "sessions": "세션",
+    "float": {
+      "error": "분석 실패",
+      "complete": "분석 완료",
+      "analyzing": "{{count}}개 세션 분석 중...",
+      "preparing": "분석 준비 중...",
+      "clickToView": "클릭하여 보기",
+      "chunkProgress": "({{current}}/{{total}} 청크)",
+      "finalAnalysis": "(종합 분석)"
+    }
+  }
+}

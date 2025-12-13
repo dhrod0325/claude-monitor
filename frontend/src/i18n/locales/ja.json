@@ -1,0 +1,138 @@
+{
+  "common": {
+    "back": "戻る",
+    "refresh": "更新",
+    "loading": "読み込み中...",
+    "search": "検索",
+    "tryAgain": "再試行",
+    "copied": "コピーしました",
+    "sessions": "セッション",
+    "tokens": "トークン",
+    "page": "ページ",
+    "of": "/",
+    "showing": "表示中",
+    "cancel": "キャンセル",
+    "close": "閉じる",
+    "selectModel": "モデル選択"
+  },
+  "header": {
+    "title": "Claude Monitor",
+    "searchPlaceholder": "セッションを検索...",
+    "analysis": "プロンプト分析",
+    "workAnalysis": "業務",
+    "usage": "使用量"
+  },
+  "sidebar": {
+    "projects": "プロジェクト",
+    "noProjects": "プロジェクトがありません"
+  },
+  "sessionList": {
+    "selectProject": "プロジェクトを選択するか検索してください",
+    "searchResults": "「{{query}}」の検索結果: {{count}}件",
+    "noSearchResults": "検索結果がありません",
+    "noSessions": "セッションがありません"
+  },
+  "sessionCard": {
+    "view": "表示",
+    "continue": "続行",
+    "resume": "再開",
+    "agent": "エージェント"
+  },
+  "sessionView": {
+    "session": "セッション"
+  },
+  "usage": {
+    "title": "使用量ダッシュボード",
+    "description": "Claude Codeの使用量とコストを追跡",
+    "totalCost": "総コスト",
+    "totalSessions": "総セッション数",
+    "totalTokens": "総トークン数",
+    "avgCostPerSession": "セッション平均コスト",
+    "overview": "概要",
+    "byModel": "モデル別",
+    "byProject": "プロジェクト別",
+    "timeline": "タイムライン",
+    "tokenBreakdown": "トークン内訳",
+    "inputTokens": "入力トークン",
+    "outputTokens": "出力トークン",
+    "cacheWrite": "キャッシュ書込",
+    "cacheRead": "キャッシュ読取",
+    "mostUsedModels": "よく使うモデル",
+    "topProjects": "上位プロジェクト",
+    "usageByModel": "モデル別使用量",
+    "usageByProject": "プロジェクト別使用量",
+    "totalProjects": "全{{count}}プロジェクト",
+    "perSession": "/セッション",
+    "dailyUsage": "日別使用量",
+    "dailyUsageOverTime": "期間別日次使用量",
+    "noUsageData": "選択した期間のデータがありません",
+    "loadError": "使用量統計の読み込みに失敗しました。再試行してください。",
+    "cost": "コスト",
+    "model": "モデル",
+    "modelPlural": "モデル",
+    "dateRange": {
+      "7d": "過去7日間",
+      "30d": "過去30日間",
+      "all": "全期間"
+    },
+    "models": "モデル"
+  },
+  "analysis": {
+    "title": "プロンプト分析",
+    "description": "プロンプトパターンを分析し、改善提案を取得",
+    "analyzing": "分析中...",
+    "analyzingPrompts": "{{count}}件のプロンプトを分析中",
+    "waiting": "応答を待っています...",
+    "mayTakeMinutes": "数分かかる場合があります",
+    "backgroundNotice": "分析中でも他のページに移動できます。進行状況はフローティングインジケーターで確認できます。",
+    "newAnalysis": "新規分析",
+    "history": "履歴",
+    "float": {
+      "error": "分析に失敗しました",
+      "complete": "分析完了",
+      "analyzing": "{{count}}件のプロンプトを分析中...",
+      "preparing": "分析の準備中...",
+      "clickToView": "クリックして表示"
+    }
+  },
+  "language": {
+    "ko": "韓国語",
+    "en": "英語",
+    "ja": "日本語",
+    "zh": "中国語"
+  },
+  "workAnalysis": {
+    "title": "業務分析",
+    "description": "日別の業務進捗状況を分析します",
+    "dateRange": "分析期間",
+    "selectProjects": "プロジェクト選択",
+    "selectAll": "全選択",
+    "clearSelection": "選択解除",
+    "selectedSessions": "選択されたセッション: {{count}}件",
+    "noSessionsInPeriod": "選択した期間にセッションがありません",
+    "startAnalysis": "分析開始",
+    "analyzing": "分析中...",
+    "analyzingSessions": "{{count}}件のセッションを分析中",
+    "waiting": "応答を待っています...",
+    "backgroundNotice": "分析中でも他のページに移動できます。",
+    "resultTitle": "業務分析結果",
+    "period": "期間",
+    "projectLabel": "プロジェクト",
+    "reanalyze": "再分析",
+    "delete": "削除",
+    "confirmDelete": "この分析を削除しますか?",
+    "newAnalysis": "新規分析",
+    "history": "履歴",
+    "noHistory": "分析履歴がありません",
+    "sessions": "セッション",
+    "float": {
+      "error": "分析に失敗しました",
+      "complete": "分析完了",
+      "analyzing": "{{count}}件のセッションを分析中...",
+      "preparing": "分析の準備中...",
+      "clickToView": "クリックして表示",
+      "chunkProgress": "({{current}}/{{total}} チャンク)",
+      "finalAnalysis": "(最終分析)"
+    }
+  }
+}

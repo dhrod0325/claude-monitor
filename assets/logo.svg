@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- ClaudeWatch - C + 돋보기 컨셉 -->
+  <defs>
+    <linearGradient id="cGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E07A5F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4583B;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- 배경 -->
+  <circle cx="100" cy="100" r="90" fill="#2D2F45"/>
+
+  <!-- C 글자 (Claude) -->
+  <path d="M130 60
+           A50 50 0 1 0 130 140"
+        fill="none"
+        stroke="url(#cGrad)"
+        stroke-width="18"
+        stroke-linecap="round"/>
+
+  <!-- 돋보기 렌즈 -->
+  <circle cx="115" cy="115" r="28" fill="none" stroke="#81B29A" stroke-width="6"/>
+
+  <!-- 돋보기 손잡이 -->
+  <line x1="135" y1="135" x2="160" y2="160" stroke="#81B29A" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- 반짝임 효과 -->
+  <circle cx="100" cy="102" r="4" fill="#fff" opacity="0.6"/>
+</svg>
