@@ -1,4 +1,60 @@
 {
+  "landing": {
+    "nav": {
+      "openApp": "Open App"
+    },
+    "hero": {
+      "badge": "Real-time Monitoring",
+      "title": {
+        "prefix": "See What",
+        "suffix": "is Really Doing"
+      },
+      "description": "Visualize your Claude Code sessions in real-time. Track usage, analyze costs, and gain deep insights into your AI development workflow.",
+      "download": "Download for macOS",
+      "viewSource": "View Source",
+      "stats": {
+        "languages": "Languages",
+        "realtimeValue": "Real-time",
+        "realtime": "WebSocket Updates",
+        "analysis": "Powered Analysis"
+      }
+    },
+    "features": {
+      "label": "Features",
+      "title": "Everything You Need to Monitor Claude",
+      "description": "Powerful tools to understand, analyze, and optimize your Claude Code usage",
+      "realtime": {
+        "title": "Real-time Monitoring",
+        "description": "Watch your Claude sessions live with WebSocket-powered updates. See every tool call, message, and response as it happens."
+      },
+      "usage": {
+        "title": "Usage Dashboard",
+        "description": "Track costs, tokens, and session statistics across all your projects. Visualize usage patterns with interactive charts."
+      },
+      "analysis": {
+        "title": "Prompt Analysis",
+        "description": "AI-powered analysis of your prompts and workflows. Identify patterns, optimize strategies, and improve productivity."
+      },
+      "tools": {
+        "title": "Tool Visualization",
+        "description": "See exactly which tools Claude uses and how. Understand the sequence of operations in every session."
+      },
+      "search": {
+        "title": "Session Search",
+        "description": "Find any session instantly with powerful search and filtering. Navigate through your entire Claude history."
+      },
+      "i18n": {
+        "title": "Multi-language",
+        "description": "Full support for English, Korean, Japanese, and Chinese. Auto-detects your browser language."
+      }
+    },
+    "cta": {
+      "title": "Start Monitoring Today",
+      "description": "Download Claude Monitor and take control of your AI development workflow",
+      "download": "Download for macOS",
+      "docs": "View Documentation"
+    }
+  },
   "common": {
     "back": "Back",
     "refresh": "Refresh",

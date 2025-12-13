@@ -1,4 +1,60 @@
 {
+  "landing": {
+    "nav": {
+      "openApp": "打开应用"
+    },
+    "hero": {
+      "badge": "实时监控",
+      "title": {
+        "prefix": "查看",
+        "suffix": "在做什么"
+      },
+      "description": "实时可视化您的Claude Code会话。跟踪使用量、分析成本，深入了解您的AI开发工作流程。",
+      "download": "下载macOS版",
+      "viewSource": "查看源码",
+      "stats": {
+        "languages": "支持语言",
+        "realtimeValue": "实时",
+        "realtime": "WebSocket更新",
+        "analysis": "驱动分析"
+      }
+    },
+    "features": {
+      "label": "功能",
+      "title": "监控Claude所需的一切",
+      "description": "理解、分析和优化Claude Code使用的强大工具",
+      "realtime": {
+        "title": "实时监控",
+        "description": "通过WebSocket实时更新实时查看Claude会话。实时查看每个工具调用、消息和响应。"
+      },
+      "usage": {
+        "title": "使用量仪表板",
+        "description": "跟踪所有项目的成本、令牌和会话统计。使用交互式图表可视化使用模式。"
+      },
+      "analysis": {
+        "title": "提示词分析",
+        "description": "AI驱动的提示词和工作流程分析。识别模式、优化策略、提高生产力。"
+      },
+      "tools": {
+        "title": "工具可视化",
+        "description": "准确查看Claude使用哪些工具以及如何使用。了解每个会话中的操作序列。"
+      },
+      "search": {
+        "title": "会话搜索",
+        "description": "通过强大的搜索和过滤即时查找任何会话。浏览您的整个Claude历史记录。"
+      },
+      "i18n": {
+        "title": "多语言支持",
+        "description": "完全支持英语、韩语、日语和中文。自动检测浏览器语言。"
+      }
+    },
+    "cta": {
+      "title": "立即开始监控",
+      "description": "下载Claude Monitor，掌控您的AI开发工作流程",
+      "download": "下载macOS版",
+      "docs": "查看文档"
+    }
+  },
   "common": {
     "back": "返回",
     "refresh": "刷新",

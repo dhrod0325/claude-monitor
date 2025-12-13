@@ -1,4 +1,60 @@
 {
+  "landing": {
+    "nav": {
+      "openApp": "アプリを開く"
+    },
+    "hero": {
+      "badge": "リアルタイム監視",
+      "title": {
+        "prefix": "",
+        "suffix": "が何をしているか確認しよう"
+      },
+      "description": "Claude Codeセッションをリアルタイムで可視化。使用量の追跡、コスト分析、AI開発ワークフローの深い洞察を提供します。",
+      "download": "macOS版をダウンロード",
+      "viewSource": "ソースを見る",
+      "stats": {
+        "languages": "対応言語",
+        "realtimeValue": "リアルタイム",
+        "realtime": "WebSocket更新",
+        "analysis": "ベースの分析"
+      }
+    },
+    "features": {
+      "label": "機能",
+      "title": "Claude監視に必要なすべて",
+      "description": "Claude Codeの使用を理解、分析、最適化するための強力なツール",
+      "realtime": {
+        "title": "リアルタイム監視",
+        "description": "WebSocketによるリアルタイム更新でClaudeセッションをライブで確認。すべてのツール呼び出し、メッセージ、応答をリアルタイムで表示。"
+      },
+      "usage": {
+        "title": "使用量ダッシュボード",
+        "description": "すべてのプロジェクトのコスト、トークン、セッション統計を追跡。インタラクティブなチャートで使用パターンを可視化。"
+      },
+      "analysis": {
+        "title": "プロンプト分析",
+        "description": "AIによるプロンプトとワークフローの分析。パターンを特定し、戦略を最適化して生産性を向上。"
+      },
+      "tools": {
+        "title": "ツール可視化",
+        "description": "Claudeがどのツールをどのように使用しているかを正確に確認。すべてのセッションの操作シーケンスを理解。"
+      },
+      "search": {
+        "title": "セッション検索",
+        "description": "強力な検索とフィルタリングで任意のセッションを即座に検索。Claude履歴全体をナビゲート。"
+      },
+      "i18n": {
+        "title": "多言語対応",
+        "description": "英語、韓国語、日本語、中国語を完全サポート。ブラウザ言語を自動検出。"
+      }
+    },
+    "cta": {
+      "title": "今日から監視を始めよう",
+      "description": "Claude Monitorをダウンロードして、AI開発ワークフローを管理しましょう",
+      "download": "macOS版をダウンロード",
+      "docs": "ドキュメントを見る"
+    }
+  },
   "common": {
     "back": "戻る",
     "refresh": "更新",
