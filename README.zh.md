@@ -9,6 +9,10 @@
 Claude Monitor可视化Claude Code会话数据，追踪和分析开发活动。
 提供实时监控、使用量统计、AI驱动的提示词/工作分析功能。
 
+## 演示
+
+https://dhrod0325.github.io/claude-monitor/
+
 ## 下载
 
 | 平台 | 下载 |
@@ -96,7 +100,8 @@ npm install
 ./scripts/dev.sh
 ```
 
-- Frontend: http://localhost:5173
+- 着陆页: http://localhost:5173
+- 应用: http://localhost:5173/app.html
 - Backend: http://localhost:8000
 - API Docs: http://localhost:8000/docs
 
@@ -202,9 +207,15 @@ claude-monitor/
 │       ├── analysis.py
 │       └── work_analysis.py
 ├── frontend/
+│   ├── index.html          # 着陆页入口
+│   ├── app.html            # 应用入口
 │   ├── src/
+│   │   ├── main.tsx        # 应用入口点
+│   │   ├── landing.tsx     # 着陆页入口点
 │   │   ├── App.tsx
 │   │   ├── components/
+│   │   │   ├── Landing/    # 着陆页组件
+│   │   │   └── ...
 │   │   ├── hooks/
 │   │   ├── i18n/
 │   │   ├── lib/
@@ -213,9 +224,9 @@ claude-monitor/
 │   │   └── types/
 │   ├── package.json
 │   └── vite.config.ts
+├── tauri-app/              # 桌面应用 (Tauri)
 ├── scripts/
 │   └── dev.sh
-├── _docs/
 └── README.md
 ```
 
@@ -225,6 +236,7 @@ claude-monitor/
 |------|------|
 | Backend | Python 3.11+, FastAPI, uvicorn, watchfiles, pydantic, cachetools |
 | Frontend | React 18, TypeScript, Vite, Tailwind CSS 4.x |
+| Desktop | Tauri |
 | 状态管理 | Zustand |
 | UI | Radix UI, Framer Motion, Lucide Icons |
 | 国际化 | i18next |

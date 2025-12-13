@@ -11,6 +11,10 @@ A web application for real-time monitoring and analysis of Claude Code sessions
 Claude Monitor visualizes Claude Code session data to track and analyze development activities.
 It provides real-time monitoring, usage statistics, and AI-powered prompt/work analysis features.
 
+## Demo
+
+https://dhrod0325.github.io/claude-monitor/
+
 ## Download
 
 | Platform | Download |
@@ -98,7 +102,8 @@ Auto-reloads on code changes.
 ./scripts/dev.sh
 ```
 
-- Frontend: http://localhost:5173
+- Landing Page: http://localhost:5173
+- App: http://localhost:5173/app.html
 - Backend: http://localhost:8000
 - API Docs: http://localhost:8000/docs
 
@@ -204,9 +209,15 @@ claude-monitor/
 │       ├── analysis.py
 │       └── work_analysis.py
 ├── frontend/
+│   ├── index.html          # Landing page entry
+│   ├── app.html            # App entry
 │   ├── src/
+│   │   ├── main.tsx        # App entry point
+│   │   ├── landing.tsx     # Landing page entry point
 │   │   ├── App.tsx
 │   │   ├── components/
+│   │   │   ├── Landing/    # Landing page components
+│   │   │   └── ...
 │   │   ├── hooks/
 │   │   ├── i18n/
 │   │   ├── lib/
@@ -215,9 +226,9 @@ claude-monitor/
 │   │   └── types/
 │   ├── package.json
 │   └── vite.config.ts
+├── tauri-app/              # Desktop app (Tauri)
 ├── scripts/
 │   └── dev.sh
-├── _docs/
 └── README.md
 ```
 
@@ -227,6 +238,7 @@ claude-monitor/
 |-------|--------------|
 | Backend | Python 3.11+, FastAPI, uvicorn, watchfiles, pydantic, cachetools |
 | Frontend | React 18, TypeScript, Vite, Tailwind CSS 4.x |
+| Desktop | Tauri |
 | State | Zustand |
 | UI | Radix UI, Framer Motion, Lucide Icons |
 | i18n | i18next |

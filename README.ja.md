@@ -9,6 +9,10 @@ Claude Codeセッションをリアルタイムで監視・分析するWebアプ
 Claude MonitorはClaude Codeのセッションデータを可視化し、開発活動を追跡・分析します。
 リアルタイム監視、使用量統計、AI駆動のプロンプト/業務分析機能を提供します。
 
+## デモ
+
+https://dhrod0325.github.io/claude-monitor/
+
 ## ダウンロード
 
 | プラットフォーム | ダウンロード |
@@ -96,7 +100,8 @@ npm install
 ./scripts/dev.sh
 ```
 
-- Frontend: http://localhost:5173
+- ランディングページ: http://localhost:5173
+- アプリ: http://localhost:5173/app.html
 - Backend: http://localhost:8000
 - API Docs: http://localhost:8000/docs
 
@@ -202,9 +207,15 @@ claude-monitor/
 │       ├── analysis.py
 │       └── work_analysis.py
 ├── frontend/
+│   ├── index.html          # ランディングページエントリー
+│   ├── app.html            # アプリエントリー
 │   ├── src/
+│   │   ├── main.tsx        # アプリエントリーポイント
+│   │   ├── landing.tsx     # ランディングページエントリーポイント
 │   │   ├── App.tsx
 │   │   ├── components/
+│   │   │   ├── Landing/    # ランディングページコンポーネント
+│   │   │   └── ...
 │   │   ├── hooks/
 │   │   ├── i18n/
 │   │   ├── lib/
@@ -213,9 +224,9 @@ claude-monitor/
 │   │   └── types/
 │   ├── package.json
 │   └── vite.config.ts
+├── tauri-app/              # デスクトップアプリ (Tauri)
 ├── scripts/
 │   └── dev.sh
-├── _docs/
 └── README.md
 ```
 
@@ -225,6 +236,7 @@ claude-monitor/
 |----------|------|
 | Backend | Python 3.11+, FastAPI, uvicorn, watchfiles, pydantic, cachetools |
 | Frontend | React 18, TypeScript, Vite, Tailwind CSS 4.x |
+| Desktop | Tauri |
 | 状態管理 | Zustand |
 | UI | Radix UI, Framer Motion, Lucide Icons |
 | 国際化 | i18next |
