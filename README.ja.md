@@ -2,6 +2,8 @@
 
 [English](./README.md) | [한국어](./README.ko.md) | [日本語](./README.ja.md) | [中文](./README.zh.md)
 
+![screen.png](frontend/public/screenshot/screen.png)
+
 Claude Codeセッションをリアルタイムで監視・分析するWebアプリケーション
 
 ## 概要

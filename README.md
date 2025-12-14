@@ -2,7 +2,7 @@
 
 [English](./README.md) | [한국어](./README.ko.md) | [日本語](./README.ja.md) | [中文](./README.zh.md)
 
-![screen.png](screenshot/screen.png)
+![screen.png](frontend/public/screenshot/screen.png)
 
 A web application for real-time monitoring and analysis of Claude Code sessions
 
