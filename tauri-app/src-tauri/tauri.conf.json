@@ -27,17 +27,27 @@
   },
   "bundle": {
     "active": true,
-    "targets": ["dmg", "app"],
+    "targets": "all",
     "icon": [
       "../../assets/icon.png",
       "../../assets/icon.icns",
       "../../assets/icon.ico"
     ],
     "externalBin": [
-      "backend"
+      "binaries/backend"
     ],
     "macOS": {
       "minimumSystemVersion": "10.15"
+    },
+    "windows": {
+      "webviewInstallMode": {
+        "type": "downloadBootstrapper"
+      }
+    },
+    "linux": {
+      "appimage": {
+        "bundleMediaFramework": true
+      }
     }
   },
   "plugins": {
