@@ -19,9 +19,9 @@ https://dhrod0325.github.io/claude-monitor/
 
 | 플랫폼 | 다운로드 |
 |--------|----------|
-| macOS (Apple Silicon) | [Claude.Monitor_0.1.2_aarch64.dmg](https://github.com/dhrod0325/claude-monitor/releases/download/v0.1.2/Claude.Monitor_0.1.2_aarch64.dmg) |
-| Windows (x64) | [Claude.Monitor_0.1.2_x64-setup.exe](https://github.com/dhrod0325/claude-monitor/releases/download/v0.1.2/Claude.Monitor_0.1.2_x64-setup.exe) |
-| Linux (x64) | [Claude.Monitor_0.1.2_amd64.AppImage](https://github.com/dhrod0325/claude-monitor/releases/download/v0.1.2/Claude.Monitor_0.1.2_amd64.AppImage) |
+| macOS (Apple Silicon) | [Claude.Monitor_0.1.3_aarch64.dmg](https://github.com/dhrod0325/claude-monitor/releases/download/v0.1.3/Claude.Monitor_0.1.3_aarch64.dmg) |
+| Windows (x64) | [Claude.Monitor_0.1.3_x64-setup.exe](https://github.com/dhrod0325/claude-monitor/releases/download/v0.1.3/Claude.Monitor_0.1.3_x64-setup.exe) |
+| Linux (x64) | [Claude.Monitor_0.1.3_amd64.AppImage](https://github.com/dhrod0325/claude-monitor/releases/download/v0.1.3/Claude.Monitor_0.1.3_amd64.AppImage) |
 
 > 모든 릴리스 보기: [Releases](https://github.com/dhrod0325/claude-monitor/releases)
 

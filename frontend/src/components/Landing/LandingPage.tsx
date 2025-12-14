@@ -28,13 +28,13 @@ const IS_GITHUB_PAGES = import.meta.env.VITE_GITHUB_PAGES === 'true';
 const BASE_URL = import.meta.env.BASE_URL;
 
 const DOWNLOADS = [
-  { platform: 'macOS (Apple Silicon)', file: 'Claude.Monitor_0.1.2_aarch64.dmg' },
-  { platform: 'Windows', file: 'Claude.Monitor_0.1.2_x64-setup.exe' },
-  { platform: 'Linux', file: 'Claude.Monitor_0.1.2_amd64.AppImage' },
+  { platform: 'macOS (Apple Silicon)', file: 'Claude.Monitor_0.1.3_aarch64.dmg' },
+  { platform: 'Windows', file: 'Claude.Monitor_0.1.3_x64-setup.exe' },
+  { platform: 'Linux', file: 'Claude.Monitor_0.1.3_amd64.AppImage' },
 ];
 
 const getDownloadUrl = (file: string) =>
-  `https://github.com/dhrod0325/claude-monitor/releases/download/v0.1.2/${file}`;
+  `https://github.com/dhrod0325/claude-monitor/releases/download/v0.1.3/${file}`;
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
