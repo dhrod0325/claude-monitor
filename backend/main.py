@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pathlib import Path
 import logging
@@ -44,32 +45,61 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# API 라우터 등록
-app.include_router(router, prefix="/api")
-app.include_router(analysis_router, prefix="/api")
-app.include_router(work_analysis_router, prefix="/api")
-app.include_router(websocket_router)
-
-# 프론트엔드 정적 파일 서빙 (빌드 후)
+# 프론트엔드 경로 설정
 base_path = get_base_path()
 if getattr(sys, 'frozen', False):
-    # PyInstaller 패키징 환경
     frontend_dist = base_path / "frontend_dist"
 else:
-    # 개발 환경
     frontend_dist = Path(__file__).parent.parent / "frontend" / "dist"
 
-if frontend_dist.exists():
-    app.mount("/", StaticFiles(directory=str(frontend_dist), html=True), name="static")
-    logger.debug(f"Serving static files from {frontend_dist}")
-else:
-    logger.warning(f"Frontend dist not found at {frontend_dist}")
+logger.debug(f"Frontend dist path: {frontend_dist}")
 
 
 @app.get("/health")
 async def health_check():
     """헬스 체크"""
     return {"status": "healthy"}
+
+
+# API 라우터 등록
+app.include_router(router, prefix="/api")
+app.include_router(analysis_router, prefix="/api")
+app.include_router(work_analysis_router, prefix="/api")
+app.include_router(websocket_router)
+
+
+# 정적 파일 서빙 (API 라우터 이후에 등록)
+if frontend_dist.exists():
+    # assets 폴더 마운트
+    assets_dir = frontend_dist / "assets"
+    if assets_dir.exists():
+        app.mount("/assets", StaticFiles(directory=str(assets_dir)), name="assets")
+
+    # HTML 파일 직접 라우팅
+    @app.get("/app.html")
+    async def serve_app():
+        return FileResponse(frontend_dist / "app.html")
+
+    @app.get("/index.html")
+    async def serve_index_html():
+        return FileResponse(frontend_dist / "index.html")
+
+    @app.get("/")
+    async def serve_root():
+        return FileResponse(frontend_dist / "index.html")
+
+    # 기타 정적 파일 (favicon 등)
+    @app.get("/{filename:path}")
+    async def serve_static(filename: str):
+        file_path = frontend_dist / filename
+        if file_path.exists() and file_path.is_file():
+            return FileResponse(file_path)
+        # SPA fallback
+        return FileResponse(frontend_dist / "index.html")
+
+    logger.debug(f"Serving static files from {frontend_dist}")
+else:
+    logger.warning(f"Frontend dist not found at {frontend_dist}")
 
 
 if __name__ == "__main__":
