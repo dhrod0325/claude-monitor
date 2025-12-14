@@ -50,9 +50,6 @@ jobs:
           - os: macos-latest
             target: aarch64-apple-darwin
             binary_name: backend-aarch64-apple-darwin
-          - os: macos-13
-            target: x86_64-apple-darwin
-            binary_name: backend-x86_64-apple-darwin
           - os: windows-latest
             target: x86_64-pc-windows-msvc
             binary_name: backend-x86_64-pc-windows-msvc.exe
@@ -95,9 +92,6 @@ jobs:
           - os: macos-latest
             target: aarch64-apple-darwin
             backend_binary: backend-aarch64-apple-darwin
-          - os: macos-13
-            target: x86_64-apple-darwin
-            backend_binary: backend-x86_64-apple-darwin
           - os: windows-latest
             target: x86_64-pc-windows-msvc
             backend_binary: backend-x86_64-pc-windows-msvc.exe
