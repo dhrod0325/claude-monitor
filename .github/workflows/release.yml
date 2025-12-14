@@ -133,9 +133,12 @@ jobs:
         run: |
           cd tauri-app/src-tauri/binaries
           if [ "${{ matrix.os }}" = "windows-latest" ]; then
-            mv ${{ matrix.backend_binary }} backend-${{ matrix.target }}.exe
+            TARGET_NAME="backend-${{ matrix.target }}.exe"
           else
-            mv ${{ matrix.backend_binary }} backend-${{ matrix.target }}
+            TARGET_NAME="backend-${{ matrix.target }}"
+          fi
+          if [ "${{ matrix.backend_binary }}" != "$TARGET_NAME" ]; then
+            mv "${{ matrix.backend_binary }}" "$TARGET_NAME"
           fi
 
       - name: Install frontend dependencies
