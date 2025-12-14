@@ -5,7 +5,7 @@
   "identifier": "com.claude.monitor",
   "build": {
     "beforeBuildCommand": "cd ../frontend && npm run build",
-    "beforeDevCommand": "",
+    "beforeDevCommand": "cd ../backend && python main.py &",
     "frontendDist": "../../frontend/dist"
   },
   "app": {
