@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Claude Code session monitoring and analysis tool",
   "scripts": {
-    "dev": "concurrently -k \"cd ../backend && python main.py\" \"tauri dev\"",
+    "dev": "concurrently -k \"cd ../backend && python3 main.py\" \"tauri dev\"",
     "build": "tauri build",
     "build:backend": "cd ../backend && pyinstaller --onefile --name backend-${npm_config_target:-$(uname -m | sed 's/arm64/aarch64/;s/x86_64/x86_64/')-apple-darwin} main.py",
     "bundle:mac-arm": "npm run build:backend -- --target aarch64-apple-darwin && npm run build -- --target aarch64-apple-darwin",
