@@ -17,9 +17,11 @@ https://dhrod0325.github.io/claude-monitor/
 
 ## 下载
 
-| 平台                    | 下载                                                                                                                                        |
-|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| macOS (Apple Silicon) | [Claude.Monitor_0.1.0_aarch64.dmg](https://github.com/dhrod0325/claude-monitor/releases/download/v0.1.0/Claude.Monitor_0.1.0_aarch64.dmg) |
+| 平台 | 下载 |
+|------|------|
+| macOS (Apple Silicon) | [Claude.Monitor_0.1.1_aarch64.dmg](https://github.com/dhrod0325/claude-monitor/releases/download/v0.1.1/Claude.Monitor_0.1.1_aarch64.dmg) |
+| Windows (x64) | [Claude.Monitor_0.1.1_x64-setup.exe](https://github.com/dhrod0325/claude-monitor/releases/download/v0.1.1/Claude.Monitor_0.1.1_x64-setup.exe) |
+| Linux (x64) | [claude-monitor_0.1.1_amd64.AppImage](https://github.com/dhrod0325/claude-monitor/releases/download/v0.1.1/claude-monitor_0.1.1_amd64.AppImage) |
 
 > 查看所有版本: [Releases](https://github.com/dhrod0325/claude-monitor/releases)
 

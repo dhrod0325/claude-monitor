@@ -23,10 +23,18 @@ import {
 import { useCallback, useEffect, useState } from 'react';
 
 const GITHUB_URL = 'https://github.com/dhrod0325/claude-monitor';
-const DOWNLOAD_URL =
-  'https://github.com/dhrod0325/claude-monitor/releases/download/v0.1.0/Claude.Monitor_0.1.0_aarch64.dmg';
+const RELEASES_URL = 'https://github.com/dhrod0325/claude-monitor/releases/latest';
 const IS_GITHUB_PAGES = import.meta.env.VITE_GITHUB_PAGES === 'true';
 const BASE_URL = import.meta.env.BASE_URL;
+
+const DOWNLOADS = [
+  { platform: 'macOS (Apple Silicon)', file: 'Claude.Monitor_0.1.1_aarch64.dmg' },
+  { platform: 'Windows', file: 'Claude.Monitor_0.1.1_x64-setup.exe' },
+  { platform: 'Linux', file: 'claude-monitor_0.1.1_amd64.AppImage' },
+];
+
+const getDownloadUrl = (file: string) =>
+  `https://github.com/dhrod0325/claude-monitor/releases/download/v0.1.1/${file}`;
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -223,12 +231,31 @@ export function LandingPage() {
           </motion.p>
 
           <motion.div variants={fadeInUp} className="flex flex-wrap gap-4 justify-center">
-            <a href={DOWNLOAD_URL}>
-              <Button className="h-12 px-6 text-base gap-2">
-                <Download className="w-5 h-5" />
-                {t('landing.hero.download')}
-              </Button>
-            </a>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button className="h-12 px-6 text-base gap-2">
+                  <Download className="w-5 h-5" />
+                  {t('landing.hero.download')}
+                  <ChevronDown className="w-4 h-4" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="center">
+                {DOWNLOADS.map((item) => (
+                  <DropdownMenuItem key={item.file} asChild>
+                    <a href={getDownloadUrl(item.file)} className="flex items-center gap-2">
+                      <Download className="w-4 h-4" />
+                      {item.platform}
+                    </a>
+                  </DropdownMenuItem>
+                ))}
+                <DropdownMenuItem asChild>
+                  <a href={RELEASES_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                    <ExternalLink className="w-4 h-4" />
+                    All Releases
+                  </a>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
             <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
               <Button variant="outline" className="h-12 px-6 text-base gap-2">
                 <Github className="w-5 h-5" />
@@ -404,12 +431,31 @@ export function LandingPage() {
             {t('landing.cta.description')}
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href={DOWNLOAD_URL}>
-              <Button className="h-12 px-8 text-base gap-2">
-                <Download className="w-5 h-5" />
-                {t('landing.cta.download')}
-              </Button>
-            </a>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button className="h-12 px-8 text-base gap-2">
+                  <Download className="w-5 h-5" />
+                  {t('landing.cta.download')}
+                  <ChevronDown className="w-4 h-4" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="center">
+                {DOWNLOADS.map((item) => (
+                  <DropdownMenuItem key={item.file} asChild>
+                    <a href={getDownloadUrl(item.file)} className="flex items-center gap-2">
+                      <Download className="w-4 h-4" />
+                      {item.platform}
+                    </a>
+                  </DropdownMenuItem>
+                ))}
+                <DropdownMenuItem asChild>
+                  <a href={RELEASES_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                    <ExternalLink className="w-4 h-4" />
+                    All Releases
+                  </a>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
             <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
               <Button variant="outline" className="h-12 px-8 text-base gap-2">
                 <ExternalLink className="w-5 h-5" />
